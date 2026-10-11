@@ -1,0 +1,84 @@
+/* reset basic and set font for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kripa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* main navigation bar */
+.top-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* left: icon + site name */
+.left-nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none; /* remove underline */
+    color: #000; /* change the color to black */
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* center: list of links*/
+.nav-list {
+    display: flex;
+    list-style: none; /* remove dots */
+    gap: 24px; 
+}
+
+.nav-list a {
+    text-decoration: none; /* remove underline */
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: #000;
+}
+
+/* right: three buttons */
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px; /* rounded corners in ChatGPT style */
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+/* dark signup button */
+.btn-signup {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* round question mark button */
+.btn-info {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
