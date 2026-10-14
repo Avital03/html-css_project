@@ -1,5 +1,220 @@
 * {
-    font-family: "Kripa", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kripa', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  min-height: 100vh;
+}
+
+.top-nav-bar {
+  position: relative;
+  text-align: center;
+  padding: 20px 30px;
+  height: 70px;
+}
+
+.center-nav {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+}
+
+.nav-list a:hover {
+  color: #000;
+}
+
+.left-nav {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-nav a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.left-nav span {
+  vertical-align: middle;
+}
+
+.left-nav .material-symbols-outlined {
+  font-size: 28px;
+}
+
+.site-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.right-nav {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.btn-login {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-signup {
+  background-color: transparent;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-info {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.agent-main-content {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.split-layout {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  text-align: left;
+}
+
+.left-text-block {
+  display: inline-block;
+  width: 45%;
+  vertical-align: middle;
+  padding-right: 60px;
+}
+
+.right-illustration-block {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.agent-badge {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.agent-badge span {
+  vertical-align: middle;
+}
+
+.agent-badge .material-symbols-outlined {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.badge-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.agent-headline {
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-bottom: 35px;
+  color: #111;
+}
+
+.btn-try-now {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.blue-bg-area {
+  background-color: #eaf3ff;
+  border-radius: 24px;
+  display: inline-block;
+  width: 100%;
+  min-height: 450px;
+  position: relative;
+}
+
+.floating-task-box {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 340px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.task-header {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.task-header span {
+  vertical-align: middle;
+}
+
+.task-header .material-symbols-outlined {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.task-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.task-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+}

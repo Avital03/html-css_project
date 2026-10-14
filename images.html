@@ -3,15 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>images</title> 
-    <!-- font import -->
+    <title>Images</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kripa:wght@100..900&display=swap" rel="stylesheet">
-    <!-- link to css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="images.css">
 </head>
 <body>
-    <h1>Images</h1>
+
+    <header class="top-nav-bar">
+       <div class="left-nav">
+            <a href="index.html">
+                <span class="material-symbols-outlined">chat</span>
+                <span class="site-name">ChatGPT</span>
+            </a>
+       </div>
+
+       <nav class="center-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="agent.html">Agent</a></li>
+        </ul>
+   </nav>
+
+       <div class="right-nav">
+            <button type="button" class="btn btn-login">Log in</button>
+            <button type="button" class="btn btn-signup">Sign up for free</button>
+            <button type="button" class="btn btn-info" aria-label="Request info">?</button>
+        </div>
+    </header>
+
+    <main class="images-main-content">
+        <section class="gallery-section">
+            <h2 class="page-title">Images</h2>
+            <p class="section-subtitle">Try a style on an image</p>
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="https://picsum.photos/120/160?random=1" alt="Style 1">
+                    <figcaption>Sketch</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://picsum.photos/120/160?random=2" alt="Style 2">
+                    <figcaption>Cyberpunk</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://picsum.photos/120/160?random=3" alt="Style 3">
+                    <figcaption>Anime</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://picsum.photos/120/160?random=4" alt="Style 4">
+                    <figcaption>3D Render</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://picsum.photos/120/160?random=5" alt="Style 5">
+                    <figcaption>Watercolor</figcaption>
+                </figure>
+                <button type="button" class="next-arrow-btn">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="discover-section">
+            <h3 class="discover-title">Discover something new <span class="material-symbols-outlined">chevron_right</span></h3>
+            
+            <div class="cards-container">
+                <a href="#" class="discover-card">
+                    <img src="https://picsum.photos/40/40?random=6" alt="Icon 1" class="card-icon">
+                    <span class="card-text">Me as The Girl with a Pearl Earring</span>
+                </a>
+                <a href="#" class="discover-card">
+                    <img src="https://picsum.photos/40/40?random=7" alt="Icon 2" class="card-icon">
+                    <span class="card-text">Create a professional profile photo</span>
+                </a>
+                <a href="#" class="discover-card">
+                    <img src="https://picsum.photos/40/40?random=8" alt="Icon 3" class="card-icon">
+                    <span class="card-text">Remove people in the background</span>
+                </a>
+                <a href="#" class="discover-card">
+                    <img src="https://picsum.photos/40/40?random=9" alt="Icon 4" class="card-icon">
+                    <span class="card-text">Style me</span>
+                </a>
+                <a href="#" class="discover-card">
+                    <img src="https://picsum.photos/40/40?random=10" alt="Icon 5" class="card-icon">
+                    <span class="card-text">What would I look like as a K-Pop star?</span>
+                </a>
+                <a href="#" class="discover-card">
+                    <img src="https://picsum.photos/40/40?random=11" alt="Icon 6" class="card-icon">
+                    <span class="card-text">Turn into a keychain</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

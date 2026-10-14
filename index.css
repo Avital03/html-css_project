@@ -1,84 +1,181 @@
-/* reset basic and set font for the whole page */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Kripa", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: 'Kripa', sans-serif;
 }
 
-/* main navigation bar */
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
 .top-nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    border-bottom: 1px solid #eaeaea;
+    position: relative;
+    text-align: center;
+    padding: 20px 30px;
+    height: 70px;
 }
 
-/* left: icon + site name */
+.left-nav {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .left-nav a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none; /* remove underline */
-    color: #000; /* change the color to black */
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.left-nav span {
+    vertical-align: middle;
+    font-size: 28px;
 }
 
 .site-name {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 20px;
-    font-weight: 600;
+    margin-left: 5px;
 }
 
-/* center: list of links*/
+.center-nav {
+    display: inline-block;
+    margin-top: 5px;
+}
+
 .nav-list {
-    display: flex;
-    list-style: none; /* remove dots */
-    gap: 24px; 
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
 .nav-list a {
-    text-decoration: none; /* remove underline */
-    color: #333;
+    text-decoration: none;
+    color: #555;
     font-size: 15px;
-    font-weight: 500;
 }
 
 .nav-list a:hover {
     color: #000;
 }
 
-/* right: three buttons */
 .right-nav {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .btn {
-    padding: 8px 16px;
-    border-radius: 20px; /* rounded corners in ChatGPT style */
-    font-size: 14px;
+    display: inline-block;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
     cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.btn-login {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-signup {
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-info {
+    background-color: transparent;
     border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.search-box-wrapper {
+    display: inline-block;
+    text-align: left;
+    width: 750px;
+    max-width: 90%;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.agenda-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 15px;
     background-color: transparent;
 }
 
-/* dark signup button */
-.btn-signup {
-    background-color: #000;
-    color: #fff;
-    border-color: #000;
+.form-container {
+    display: inline-block;
+    text-align: left;
+    width: 750px;
+    max-width: 90%;
 }
 
-/* round question mark button */
-.btn-info {
-    width: 34px;
-    height: 34px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.agenda-input::placeholder {
+    color: #999;
+}
+
+.bottom-actions {
+    overflow: hidden;
+}
+
+.action-btn {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 6px 14px;
+    margin-right: 8px;
+    cursor: pointer;
+    color: #444;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.action-btn span {
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 4px;
+    color: #666;
+}
+
+.voice-btn {
+    float: right; /* דוחף את הכפתור לצד ימין של השורה[cite: 52] */
+    margin-right: 0;
+    background-color: #f0f0f0;
+    border: none;
 }

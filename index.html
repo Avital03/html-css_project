@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     
-    <!-- font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kripa:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- link to icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-    <!-- link to css -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <!-- top navigation bar -->
     <header class="top-nav-bar">
-       <!-- left: icon + site name -->
        <div class="left-nav">
             <a href="index.html">
                 <span class="material-symbols-outlined">chat</span>
@@ -28,27 +23,40 @@
             </a>
        </div>
 
-       <!-- center: navigation links -->
        <nav class="center-nav">
             <ul class="nav-list">
-                <li><a href="index.html">About</a></li>
-                <li><a href="agent.html">Features</a></li>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="agent.html">Agent</a></li>
                 <li><a href="#">Learn</a></li>
-                <li><a href="agent.html">Business</a></li>
+                <li><a href="#">Business</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="images.html">Images</a></li>
                 <li><a href="#">Download</a></li>
             </ul>
        </nav>
 
-       <!-- right: 3 buttons -->
        <div class="right-nav">
             <button type="button" class="btn btn-login">Log in</button>
             <button type="button" class="btn btn-signup">Sign up for free</button>
             <button type="button" class="btn btn-info" aria-label="Request info">?</button>
         </div>
-
     </header>
+
+    <main class="main-content">
+        <h2 class="main-title">What's on the agenda today?</h2>
+        
+        <div class="search-box-wrapper">
+            <input type="text" placeholder="Ask anything" class="agenda-input">
+
+            <div class="bottom-actions">
+                <button type="button" class="action-btn"><span class="material-symbols-outlined">attach_file</span> Attach</button>
+                <button type="button" class="action-btn"><span class="material-symbols-outlined">language</span> Search</button>
+                <button type="button" class="action-btn"><span class="material-symbols-outlined">menu_book</span> Study</button>
+                <button type="button" class="action-btn"><span class="material-symbols-outlined">image</span> Create image</button>
+                <button type="button" class="action-btn voice-btn"><span class="material-symbols-outlined">graphic_eq</span> Voice</button>
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>
